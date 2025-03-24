@@ -1,0 +1,35 @@
+---
+title: "Version control"
+output: html_document
+date: "2025-03-24"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r cars}
+usethis::use_git_config(
+  user.name = "Tanja Kutscher", # <-- change to your name
+  user.email = "tanjakutscher@gmx.de", # <-- and your email
+  init.defaultBranch = "main") # <-- not necessary but kinder than 'master'
+```
+
+```{r}
+usethis::use_git()
+```
+```{r}
+usethis::create_github_token(description = "Token for Repro Workshop 2024")
+```
+```{r}
+gitcreds::gitcreds_set() # <-- Token must *not* go into brackets, paste when asked
+usethis::gh_token_help()
+```
+```{r}
+usethis::use_github()
+```
+```{r}
+repro::automate()
+```
+
+
