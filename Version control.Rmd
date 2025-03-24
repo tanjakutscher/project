@@ -38,4 +38,7 @@ repro::use_gha_docker()
 ```{r}
 usethis::browse_github_actions()
 ```
+```{r}
+repro::use_make_publish()
+```
 
