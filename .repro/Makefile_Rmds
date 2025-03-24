@@ -4,3 +4,6 @@ inflation.pdf inflation.html: inflation.Rmd data/raw/inflation.rds R/prepare_inf
 probe.pdf probe.html: probe.Rmd data/raw/inflation.rds R/prepare_inflation.R
 	$(RUN1) Rscript -e 'rmarkdown::render("$(WORKDIR)/$<", "all")' $(RUN2)
 
+Version control.html: Version control.Rmd
+	$(RUN1) Rscript -e 'rmarkdown::render("$(WORKDIR)/$<", "all")' $(RUN2)
+
