@@ -35,4 +35,7 @@ repro::automate()
 repro::use_gha_docker()
 ```
 
+```{r}
+usethis::browse_github_actions()
+```
 
