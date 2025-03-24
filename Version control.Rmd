@@ -31,5 +31,8 @@ usethis::use_github()
 ```{r}
 repro::automate()
 ```
+```{r}
+repro::use_gha_docker()
+```
 
 
